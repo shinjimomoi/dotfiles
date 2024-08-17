@@ -1,4 +1,42 @@
-Host *
-  UseKeychain yes
-  AddKeysToAgent yes
-  IdentityFile ~/.ssh/id_ed25519
+Host github.com-work
+HostName github.com
+User git
+IdentityFile ~/.ssh/evolany_shinjimomoi
+IdentitiesOnly yes
+
+Host github.com-personal
+HostName github.com
+User git
+IdentityFile ~/.ssh/id_rsa_personal
+IdentitiesOnly yes
+
+Host dev_bonp
+HostName 54.64.23.159
+IdentityFile ~/.ssh/evolany_shinjimomoi
+Port 32000
+User root
+ForwardAgent yes
+Compression yes
+
+Host bot_jump
+HostName 52.194.115.183
+IdentityFile ~/.ssh/evolany_shinjimomoi
+Port 32000
+User centos
+ForwardAgent yes
+Compression yes
+
+Host aisnap_jump
+HostName 43.207.13.71
+IdentityFile ~/.ssh/evolany_shinjimomoi
+Port 32000
+User ec2-user
+ForwardAgent yes
+Compression yes
+
+Host aisnap_jump
+HostName 43.207.13.71
+IdentityFile ~/.ssh/evolany_shinjimomoi
+Port 32000
+User ec2-user
+ForwardAgent yes
