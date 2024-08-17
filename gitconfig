@@ -59,3 +59,6 @@
 
 [init]
   defaultBranch = master
+[user]
+	email = shinjimomoi@gmail.com
+	name = Ricardo Momoi
